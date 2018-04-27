@@ -1,0 +1,5 @@
+<T> void printArray (T[] n)
+{
+    for(int i=0;i<n.length;i++)
+    System.out.println(n[i]);
+}
