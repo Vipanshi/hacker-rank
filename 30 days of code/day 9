@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    static int factorial(int n) {
+        // Complete this function
+      int ans=1;
+        if(n==1)
+             ans=1;
+        else{
+        for (int i=1;i<=n;i++)
+        {
+           ans=n*factorial(n-1);
+        }
+           
+         
+        }
+       return ans;
+    }
+
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    int n = in.nextInt();
+    int result = factorial(n);
+    System.out.println(result);
+    }
+}
