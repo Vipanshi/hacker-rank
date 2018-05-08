@@ -1,0 +1,11 @@
+class Printer
+{
+ <T>  void printArray(T []a)
+  {
+     for(T item:a)
+     {
+         System.out.println(item);
+     }
+  }
+ 
+}
