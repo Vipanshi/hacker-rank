@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+       String a[]=A.split("");
+       
+         int k=A.length();
+      
+        int count=1;
+        for(int i=1;i<k/2;)
+            for(int j=k;j>k/2;)
+        {
+                {
+                 
+            if(a[i].equals(a[j]))
+            {
+               
+               
+                count++;
+               
+            }
+                     j--;
+                    i++;
+          
+        }
+            }
+    
+        if(k==1)
+                        System.out.println("Yes");
+                   
+        else if(count==k/2+1&&k%2==0)
+            System.out.println("Yes");
+        else if(count==k-1 &&k%2!=0)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+}
